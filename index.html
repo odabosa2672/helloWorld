@@ -1,12 +1,19 @@
 <html>
     <head>
         <title>Hello World</title>
+        <script type="text/javascript">
+            function showAlert(){
+                var input = document.getElementById('texto');
+                // alert('Mensagem do Alert');
+                alert(input.value);
+            }
+        </script>
     </head>
     
     <body>
        <div>
-           <input type="text" />
-           <button>Salvar</button>
+           <input type="text" id="texto" />
+           <button onclick="showAlert()">Salvar</button>
        </div>
     </body>
 </html>
